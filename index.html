@@ -9,55 +9,155 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #ffffff; /* 白色背景 */
+            color: #333; /* 深灰色文字 */
         }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #0050b3; /* 深藍色背景 */
+            color: #fff; /* 白色文字 */
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77d9d4 3px solid; /* 藍綠色邊框 */
+        }
+
+        header a {
+            color: #fff; /* 白色文字 */
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            max-width: 200px;
+        }
+
         .showcase {
             background-color: #f5f5f5; /* 淺灰色背景 */
-            color: #000; /* 黑色文字 */
             padding: 50px 0;
             text-align: center;
         }
+
         .showcase h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
             color: #0050b3; /* 深藍色 */
         }
+
         .showcase p {
             font-size: 1.2em;
             color: #333; /* 深灰色 */
         }
+
+        .main-content {
+            padding: 20px;
+            background: #f5f5f5; /* 淺灰色背景 */
+        }
+
+        .main-content h2 {
+            color: #0050b3; /* 深藍色文字 */
+        }
+
         .contact-info {
             background-color: #0050b3; /* 深藍色背景 */
             color: #fff; /* 白色文字 */
             padding: 20px 0;
             text-align: center;
         }
+
         .contact-info p {
             margin: 5px 0;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .logo {
-            text-align: center;
+
+        footer {
+            padding: 20px;
             margin-top: 20px;
+            color: #fff; /* 白色文字 */
+            background-color: #0050b3; /* 深藍色背景 */
+            text-align: center;
         }
-        .logo img {
-            max-width: 200px;
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>威智儲能股份有限公司</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#services">服務</a></li>
+                    <li><a href="#contact">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <div class="logo">
-        <img src="path_to_your_logo.png" alt="威智儲能股份有限公司">
+        <img src="image.png" alt="威智儲能股份有限公司">
     </div>
+
     <section class="showcase">
         <div class="container">
             <h1>專業儲能解決方案</h1>
             <p>我們致力於提供先進的儲能技術和解決方案，助力綠色能源的未來。</p>
         </div>
     </section>
+
+    <section class="main-content container">
+        <h2 id="about">關於我們</h2>
+        <p>威智儲能股份有限公司是一家專注於儲能技術的創新型企業。我們的目標是通過先進的儲能解決方案，推動能源的可持續發展，並為客戶提供高效、安全、可靠的能源服務。</p>
+
+        <h2 id="services">服務</h2>
+        <p>我們提供以下服務：</p>
+        <ul>
+            <li>家庭及商業儲能解決方案</li>
+            <li>大型能源存儲系統</li>
+            <li>智能能源管理系統</li>
+            <li>能源諮詢及設計</li>
+        </ul>
+    </section>
+
     <section class="contact-info">
         <div class="container">
             <p>總經理: 黃尉桓 博士</p>
@@ -68,5 +168,9 @@
             <p>行動: +886-923-879327</p>
         </div>
     </section>
+
+    <footer>
+        <p>威智儲能股份有限公司 &copy; 2024</p>
+    </footer>
 </body>
 </html>
