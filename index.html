@@ -6,11 +6,12 @@
     <title>威智儲能科技股份有限公司</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* 白色背景 */
+            background-color: #f0f0f0; /* 輕灰色背景 */
             color: #333; /* 深灰色文字 */
+            line-height: 1.6;
         }
 
         .container {
@@ -31,7 +32,7 @@
         }
 
         header a {
-            color: #fff; /* 白色文字 */
+            color: #fff;
             text-decoration: none;
             font-size: 16px;
             margin: 0 15px;
@@ -48,33 +49,31 @@
             display: inline;
         }
 
-        header #branding {
-            float: left;
-        }
-
         header #branding h1 {
             margin: 0;
             font-size: 24px;
         }
 
         header nav {
-            float: right;
-            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .hero {
-            background-image: url('LOGO01.png'); /* 替換為你的圖片路徑 */
+            background-image: url('path/to/your/image.jpg'); /* 替換為你的圖片路徑 */
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
-            padding: 100px 0;
-            margin-top: 80px; /* 為了不被固定導航欄遮擋 */
+            padding: 100px 20px;
+            margin-top: 60px; /* 防止被導航欄遮擋 */
         }
 
         .hero h1 {
             font-size: 3em;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .hero p {
@@ -84,7 +83,8 @@
         }
 
         .main-content {
-            padding: 20px 0;
+            padding: 40px 0;
+            background: #fff;
         }
 
         .values {
@@ -111,14 +111,10 @@
             text-align: center;
         }
 
-        .value-item img {
-            max-width: 100%;
-            height: auto;
-        }
-
         .value-item h3 {
             margin-top: 10px;
-            font-size: 1.2em;
+            font-size: 1.4em;
+            color: #0073e6;
         }
 
         .value-item p {
@@ -128,8 +124,8 @@
 
         .service-info {
             text-align: center;
-            padding: 20px 0;
-            background-color: #f5f5f5;
+            padding: 40px 0;
+            background-color: #f0f0f0;
         }
 
         .service-info p {
@@ -140,7 +136,7 @@
 
         .contact-info {
             background-color: #333; /* 深灰色背景 */
-            color: #fff; /* 白色文字 */
+            color: #fff;
             padding: 30px 0;
             text-align: center;
         }
@@ -152,8 +148,8 @@
         footer {
             padding: 20px;
             margin-top: 20px;
-            color: #fff; /* 白色文字 */
-            background-color: #333; /* 深灰色背景 */
+            color: #fff;
+            background-color: #333;
             text-align: center;
         }
 
@@ -165,10 +161,10 @@
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>威智儲能科技股份有限公司</h1>
-            </div>
             <nav>
+                <div id="branding">
+                    <h1>威智儲能科技股份有限公司</h1>
+                </div>
                 <ul>
                     <li><a href="#about">關於我們</a></li>
                     <li><a href="#services">服務</a></li>
@@ -183,6 +179,11 @@
             <h1>專業儲能解決方案</h1>
             <p>我們致力於提供先進的儲能技術和解決方案，助力綠色能源的未來。</p>
         </div>
+    </section>
+
+    <section class="main-content container" id="about">
+        <h2>關於我們</h2>
+        <p>威智儲能科技股份有限公司是一家專注於儲能技術的創新型企業。我們的目標是通過先進的儲能解決方案，推動能源的可持續發展，並為客戶提供高效、安全、可靠的能源服務。</p>
     </section>
 
     <section class="values container">
@@ -207,15 +208,10 @@
         </div>
     </section>
 
-    <section class="main-content container" id="about">
-        <h2>關於我們</h2>
-        <p>威智儲能科技股份有限公司是一家專注於儲能技術的創新型企業。我們的目標是通過先進的儲能解決方案，推動能源的可持續發展，並為客戶提供高效、安全、可靠的能源服務。</p>
-    </section>
-        
     <section class="service-info container">
         <p>10年保固，終生保修，免費回收</p>
     </section>
-    
+
     <section class="contact-info" id="contact">
         <div class="container">
             <p>總經理: 黃尉桓 博士</p>
