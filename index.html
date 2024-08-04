@@ -49,27 +49,34 @@
             margin-right: 10px;
         }
 
-        header nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
         header nav ul li {
             margin-left: 20px;
+            position: relative; /* 這裡添加 position: relative; */
         }
 
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            padding: 8px 12px;
+        header nav ul li ul {
+            display: none;
+            position: absolute; /* 這裡添加 position: absolute; */
+            top: 100%; /* 這裡設置為 top: 100%; */
+            left: 0;
+            background-color: #0073e6;
+            padding: 0;
+            list-style: none;
+            margin: 0;
         }
-
-        header nav ul li a:hover {
+        
+        header nav ul li:hover ul {
+            display: block; /* 這裡設置為 display: block; */
+        }
+        
+        header nav ul li ul li a {
+            padding: 10px 15px;
+            display: block;
+            text-align: left;
+        }
+        
+        header nav ul li ul li a:hover {
             background-color: #005bb5;
-            border-radius: 4px;
         }
 
         .hero {
@@ -145,6 +152,7 @@
         }
 
         .contact-form {
+            margin-top: 10px;
             background-color: #fff;
             padding: 40px;
             margin: 20px 0;
