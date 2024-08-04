@@ -13,45 +13,11 @@
             color: #333; /* 深灰色文字 */
             line-height: 1.6;
         }
-        .navbar {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: #337ab7;
-            overflow: hidden;
-            text-align: center;
-        }
         
-        .navbar li {
-            display: inline;
-            padding: 14px 20px;
-        }
-        
-        .navbar li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        
-        .navbar li a:hover {
-            background-color: #286090;
-            border-radius: 4px;
-        }
-        
-        .logo {
-            height: 40px;
-            vertical-align: middle;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
         header {
             background: #0073e6; /* 淺藍色背景 */
             color: #fff; /* 白色文字 */
-            padding: 20px 0;
+            padding: 10px 0;
             position: fixed;
             width: 100%;
             top: 0;
@@ -59,42 +25,60 @@
             box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
         }
 
-        header a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 0 15px;
-        }
-
-        header ul {
-            padding: 0;
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        header li {
-            display: inline;
-        }
-
-        header #branding h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
         header nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header nav #branding {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav #branding h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header nav #branding img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+        }
+
+        header nav ul li a:hover {
+            background-color: #005bb5;
+            border-radius: 4px;
         }
 
         .hero {
-            background-image: url('LOGO01.png'); /* 替換為你的圖片路徑 */
+            background-image: url('07965694-8B8B-46F0-9F26-B87189B204B1.png'); /* 替換為你的圖片路徑 */
             background-size: cover;
             background-position: center;
             color: #AFFFD8;
             text-align: center;
-            padding: 80px 20px;
+            padding: 120px 20px;
             margin-top: 60px; /* 防止被導航欄遮擋 */
         }
 
@@ -110,15 +94,12 @@
             margin: 0 auto;
         }
 
-        .main-content {
+        .main-content, .values, .service-info, .contact-info {
             padding: 40px 0;
-            background: #fff;
             text-align: center;
         }
 
         .values {
-            text-align: center;
-            padding: 50px 0;
             background-color: #f5f5f5;
         }
 
@@ -132,6 +113,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .value-item {
@@ -151,12 +133,6 @@
             color: #666;
         }
 
-        .service-info {
-            text-align: center;
-            padding: 40px 0;
-            background-color: #f0f0f0;
-        }
-
         .service-info p {
             font-size: 1.2em;
             color: #0073e6;
@@ -166,8 +142,6 @@
         .contact-info {
             background-color: #333; /* 深灰色背景 */
             color: #fff;
-            padding: 30px 0;
-            text-align: center;
         }
 
         .contact-info p {
@@ -176,7 +150,6 @@
 
         footer {
             padding: 20px;
-            margin-top: 20px;
             color: #fff;
             background-color: #333;
             text-align: center;
@@ -189,25 +162,23 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <nav>
-                <div id="branding">
-                    <h1>威智儲能科技股份有限公司</h1>
-                </div>
-                <ul>
-                    <li><a href="#logo"><img src="LOGO01.png" alt="Logo" class="logo"></a></li>
-                    <li><a href="#about">關於我們</a></li>
-                    <li><a href="#services">服務</a></li>
-                    <li><a href="#contact">聯絡我們</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div id="branding">
+                <img src="LOGO01.png" alt="Logo">
+                <h1>威智儲能科技股份有限公司</h1>
+            </div>
+            <ul>
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="#services">服務</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="hero">
         <div class="container">
             <h1>專業儲能解決方案</h1>
-            <h4>我們致力於提供先進的儲能技術和解決方案，助力綠色能源的未來。</h4>
+            <p>我們致力於提供先進的儲能技術和解決方案，助力綠色能源的未來。</p>
         </div>
     </section>
 
@@ -243,7 +214,7 @@
         <p>10年保固，終生保修，免費回收</p>
     </section>
 
-    <section class="contact-info" id="contact">
+    <section class="contact-info container" id="contact">
         <div class="container">
             <p>總經理: 黃尉桓 博士</p>
             <p>地址: 110058台北市信義區基隆路一段155號6樓之8</p>
