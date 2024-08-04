@@ -13,7 +13,35 @@
             color: #333; /* 深灰色文字 */
             line-height: 1.6;
         }
-
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #337ab7;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .navbar li {
+            display: inline;
+            padding: 14px 20px;
+        }
+        
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .navbar li a:hover {
+            background-color: #286090;
+            border-radius: 4px;
+        }
+        
+        .logo {
+            height: 40px;
+            vertical-align: middle;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -161,13 +189,13 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div  class="navbar">
             <nav>
                 <div id="branding">
                     <h1>威智儲能科技股份有限公司</h1>
                 </div>
                 <ul>
-                    <li><a href="#logo">image: url('LOGO01.png')</a></li>
+                    <li><a href="#logo"><img src="LOGO01.png" alt="Logo" class="logo"></a></li>
                     <li><a href="#about">關於我們</a></li>
                     <li><a href="#services">服務</a></li>
                     <li><a href="#contact">聯絡我們</a></li>
